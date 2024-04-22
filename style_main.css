@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 70px;
+    height: 50px;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 99;
+}
+
+.logo:hover .tooltip {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    margin-top: 75px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.block h2 {
+    text-align: center;
+  }
+
+.block {
+    background-color: rgba(0, 0, 0, 0.096);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image {
+    width: 600px;
+    height: 280px;
+    object-fit: contain;
+}
+
+.description {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    
+    /* Спочатку приховуємо опис */
+    display: hidden;
+}
+
+.expand-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.expand-button:hover {
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+#subscription-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  #subscription-popup h2 {
+    color: #dddddd;
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: 50px;
+    font-size: 18px;
+  }
+  
+  #subscription-popup p {
+    color: #ddd;
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  
+  #subscription-popup .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #subscription-popup button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #subscription-popup #subscribe-button {
+    background-color: #008000;
+    color: white;
+  }
+  
+  #subscription-popup #decline-button {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+
+
+
+
+
+  #modal-ad {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #modal-ad .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #modal-ad .content h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  #modal-ad .content p {
+    margin: 0 0 20px;
+    font-size: 16px;
+  }
+  
+  #modal-ad .content button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ccc;
+  }
+  
+  #modal-ad .content button:disabled {
+    opacity: 0.5;
+  }
+  
